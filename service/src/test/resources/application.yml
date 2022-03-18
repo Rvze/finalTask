@@ -1,0 +1,66 @@
+server:
+  port: 7081
+
+mdp.discovery:
+  discoveryClientName: disable
+
+security:
+  enabled: false
+  oauth2:
+    client:
+      clientId:
+      clientSecret:
+      scope:
+      accessTokenUri:
+      userAuthorizationUri:
+    resource:
+      jwt:
+        key-uri:
+
+#spring:
+#  datasource:
+#    driverClassName: org.h2.Driver
+#    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+#    username: sa
+#    password:
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    hibernate:
+#      naming:
+#        physical-strategy: ru.diasoft.micro.lib.config.H2PhysicalNamingStrategy
+#  liquibase:
+#    change-log: classpath*:rootChangeLog.xml
+## Generate Events Publisher or Subsriber
+#  kafka:
+#    bootstrap-servers: localhost:9094
+
+spring:
+  # Postgres
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/postgres
+    username: postgres
+    password:
+    hikari:
+      connection-test-query:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    show-sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true # Для PostgreSQL установить в true, для MSSQL, Oracle в false
+        jdbc:
+          time_zone: UTC
+          lob:
+            non_contextual_creation: true
+dstrace:
+  enabled: false
+
+logging:
+  level:
+    ru.diasoft: DEBUG

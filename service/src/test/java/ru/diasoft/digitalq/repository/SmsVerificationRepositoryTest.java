@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import ru.diasoft.digitalq.domain.SmsVerification;
 
@@ -46,5 +45,21 @@ class SmsVerificationRepositoryTest {
                 orElse(SmsVerification.builder().build())).isEqualTo(savedEntity);
         assertThat(repository.findBySecretCodeAndProcessGuidAndStatus("666",
                 savedEntity.getProcessGuid(), savedEntity.getStatus())).isEmpty();
+    }
+
+    @Test
+    public void updateStatusByProcessGuidTest() {
+        SmsVerification smsVerification = SmsVerification.builder()
+                .processGuid(UUID.randomUUID().toString())
+                .phoneNumber("65432")
+                .secretCode("666")
+                .status("waiting")
+                .build();
+
+        SmsVerification createdEntity = repository.save(smsVerification);
+
+        repository.updateStatusByProcessGuid("OK", smsVerification.getProcessGuid());
+        assertThat(repository.findById(createdEntity.getVerificationId())
+                .orElse(SmsVerification.builder().build()).getStatus()).isEqualTo("OK");
     }
 }

@@ -4,7 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c00fcb2-a91f-4cc7-86e6-deb8cfb78fe5" name="Changes" comment="" />
+    <list default="true" id="6c00fcb2-a91f-4cc7-86e6-deb8cfb78fe5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/ru/diasoft/digitalq/service/SmsDeliveredListenerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/resources/event-publisher.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/resources/event-subscriber.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6ae29768-7f72-424a-9810-53e8e7371152.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6ae29768-7f72-424a-9810-53e8e7371152.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6ae29768-7f72-424a-9810-53e8e7371152/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6ae29768-7f72-424a-9810-53e8e7371152/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autotest/postman_script.json" beforeDir="false" afterPath="$PROJECT_DIR$/autotest/postman_script.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/binary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/binary.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/module-version.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/module-version.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/resources/1.00.01/1.00.01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/resources/1.00.01/1.00.01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/resources/rootChangeLog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/resources/rootChangeLog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/ru/diasoft/digitalq/config/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/ru/diasoft/digitalq/config/RestTemplateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/ru/diasoft/digitalq/domain/SmsVerification.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/ru/diasoft/digitalq/domain/SmsVerification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/ru/diasoft/digitalq/repository/SmsVerificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/ru/diasoft/digitalq/repository/SmsVerificationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/ru/diasoft/digitalq/service/SmsVerificationPrimaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/ru/diasoft/digitalq/service/SmsVerificationPrimaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/resources/i18n/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/resources/i18n/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/resources/i18n/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/resources/i18n/messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/resources/i18n/messages_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/resources/i18n/messages_ru.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/webapp/WEB-INF/ibm-web-ext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/webapp/WEB-INF/ibm-web-ext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/webapp/WEB-INF/jboss-deployment-structure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/webapp/WEB-INF/jboss-deployment-structure.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/webapp/WEB-INF/weblogic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/webapp/WEB-INF/weblogic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/java/ru/diasoft/digitalq/repository/SmsVerificationRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/ru/diasoft/digitalq/repository/SmsVerificationRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/java/ru/diasoft/digitalq/service/SmsVerificationPrimaryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/ru/diasoft/digitalq/service/SmsVerificationPrimaryServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +57,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -54,15 +96,24 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="26YaF1RgzvaXBpaRgRYCXxwTH17" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -71,10 +122,11 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.16551724" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -88,7 +140,7 @@
       <recent name="ru.diasoft.digitalq.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SmsVerificationRepositoryTest">
+  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
     <configuration name="SmsVerificationPrimaryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -135,6 +187,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SmsVerificationRepositoryTest.updateStatusByProcessGuidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.diasoft.digitalq.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.diasoft.digitalq.repository" />
+      <option name="MAIN_CLASS_NAME" value="ru.diasoft.digitalq.repository.SmsVerificationRepositoryTest" />
+      <option name="METHOD_NAME" value="updateStatusByProcessGuidTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="demo-parent [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -164,6 +232,7 @@
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.diasoft.digitalq.DemoApplication" />
+      <option name="ACTIVE_PROFILES" value="dev" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -172,12 +241,14 @@
     <list>
       <item itemvalue="JUnit.SmsVerificationRepositoryTest.smsVerificationCreateTest" />
       <item itemvalue="JUnit.SmsVerificationRepositoryTest" />
+      <item itemvalue="JUnit.SmsVerificationPrimaryServiceTest" />
+      <item itemvalue="JUnit.SmsVerificationRepositoryTest.updateStatusByProcessGuidTest" />
       <item itemvalue="Maven.demo-parent [clean,install]" />
       <item itemvalue="Spring Boot.DemoApplication (1)" />
-      <item itemvalue="JUnit.SmsVerificationPrimaryServiceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SmsVerificationRepositoryTest.updateStatusByProcessGuidTest" />
         <item itemvalue="JUnit.SmsVerificationRepositoryTest" />
         <item itemvalue="JUnit.SmsVerificationPrimaryServiceTest" />
         <item itemvalue="JUnit.SmsVerificationRepositoryTest.smsVerificationCreateTest" />
@@ -192,12 +263,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647602866480</updated>
-      <workItem from="1647602867706" duration="12656000" />
+      <workItem from="1647602867706" duration="14704000" />
+      <workItem from="1647803848604" duration="1700000" />
+      <workItem from="1647858861003" duration="8324000" />
+      <workItem from="1647867685986" duration="2000" />
+      <workItem from="1647867858025" duration="2356000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

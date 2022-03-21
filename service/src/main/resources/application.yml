@@ -16,6 +16,20 @@ spring:
     use-legacy-processing: true
   profiles:
     include: shared
+  kafka:
+    bootstrap-servers: ${KAFKA_URL:localhost:9092}
+    cloud:
+      stream:
+        binders:
+          binderName:
+            type: kafka
+        bindings:
+          smsVerificationMessagePublish:
+            destination: sms-verification-message
+          smsVerificationDeliveredSubscribe:
+            destination: sms-verification-delivered
+            group: sms-verification
+
 
 
 mdpauditlib:

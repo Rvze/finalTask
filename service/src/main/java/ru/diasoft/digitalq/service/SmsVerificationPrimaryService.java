@@ -4,7 +4,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import ru.diasoft.digitalq.domain.*;
+import ru.diasoft.digitalq.model.SmsVerificationMessage;
 import ru.diasoft.digitalq.repository.SmsVerificationRepository;
+import ru.diasoft.digitalq.smsverificationcreated.publish.SmsVerificationCreatedPublishGateway;
 
 import java.util.Optional;
 import java.util.Random;
@@ -16,6 +18,8 @@ import java.util.UUID;
 public class SmsVerificationPrimaryService implements SmsVerificationService {
 
     private final SmsVerificationRepository repository;
+
+    private final SmsVerificationCreatedPublishGateway messagingGateway;
 
     @Override
     public SmsVerificationCheckResponse dsSmsVerificationCheck(SmsVerificationCheckRequest smsVerificationCheckRequest) {
@@ -43,6 +47,12 @@ public class SmsVerificationPrimaryService implements SmsVerificationService {
 
         SmsVerificationPostResponse response = new SmsVerificationPostResponse();
         response.setProcessGUID(savedEntity.getProcessGuid());
+        messagingGateway.smsVerificationCreated(SmsVerificationMessage
+                .builder()
+                .guid(guid)
+                .code(secret)
+                .phoneNumber(smsVerificationPostRequest.getPhoneNumber())
+                .build());
         return response;
     }
 }

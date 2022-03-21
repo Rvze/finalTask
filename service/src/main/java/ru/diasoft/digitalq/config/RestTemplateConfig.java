@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
+
 import java.time.Duration;
 
 @Configuration
@@ -16,11 +17,10 @@ public class RestTemplateConfig {
     private int readTimeout;
 
     @Bean
-    public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) 
-    {
+    public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder) {
         return restTemplateBuilder
-           .setConnectTimeout(Duration.ofMillis(connectTimeout))
-           .setReadTimeout(Duration.ofMillis(readTimeout))
-           .build();
+                .setConnectTimeout(Duration.ofMillis(connectTimeout))
+                .setReadTimeout(Duration.ofMillis(readTimeout))
+                .build();
     }
 }

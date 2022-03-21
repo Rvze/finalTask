@@ -9,7 +9,7 @@
 
 
     <fileSets>
-       <fileSet>
+        <fileSet>
             <directory>.</directory>
             <outputDirectory>Demo</outputDirectory>
             <includes>

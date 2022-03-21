@@ -35,6 +35,10 @@ security:
 #    bootstrap-servers: localhost:9094
 
 spring:
+  main:
+    allow-bean-definition-overriding: true
+  liquibase:
+    change-log: classpath*:rootChangeLog.xml
   # Postgres
   datasource:
     driverClassName: org.postgresql.Driver
@@ -58,6 +62,7 @@ spring:
           time_zone: UTC
           lob:
             non_contextual_creation: true
+
 dstrace:
   enabled: false
 

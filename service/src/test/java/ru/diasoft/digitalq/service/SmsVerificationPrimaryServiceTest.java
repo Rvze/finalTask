@@ -11,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import ru.diasoft.digitalq.domain.*;
 import ru.diasoft.digitalq.repository.SmsVerificationRepository;
+import ru.diasoft.digitalq.smsverificationcreated.publish.SmsVerificationCreatedPublishGateway;
 
 import java.util.UUID;
 
@@ -24,6 +25,10 @@ class SmsVerificationPrimaryServiceTest {
     @Mock
     private SmsVerificationRepository repository;
 
+    @Mock
+    private SmsVerificationCreatedPublishGateway messagingGateway;
+
+
     @Autowired
     private SmsVerificationPrimaryService service;
 
@@ -35,7 +40,7 @@ class SmsVerificationPrimaryServiceTest {
 
     @Before
     public void init() {
-        service = new SmsVerificationPrimaryService(repository);
+        service = new SmsVerificationPrimaryService(repository, messagingGateway);
         SmsVerification smsVerification = SmsVerification.builder()
                 .processGuid(UUID.randomUUID().toString())
                 .phoneNumber(PHONE_NUMBER)

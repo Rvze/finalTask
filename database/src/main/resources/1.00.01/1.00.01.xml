@@ -5,11 +5,12 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <property name="autoIncrement" value="false" dbms="postgresql,mssql,oracle"/>
-    <property name="autoIncrement" value="true" dbms="h2"/>
+    <property name="autoIncrement" value="true" dbms="postgresql,mssql,oracle"/>
+    <property name="autoIncrement" value="false" dbms="h2"/>
 
-    <changeSet id="1.0.1-createVerificationTable" author="nmakarov" context="update" runInTransaction="false">
-        <preConditions>
+    <changeSet id="1.0.1-createVerificationTable" author="nmakarov" context="update" runInTransaction="false"
+               objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+        <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="sms_verification"/>
             </not>
@@ -43,6 +44,9 @@
             <column name="secretcode"/>
             <column name="status"/>
         </createIndex>
+
+        <comment>Table sms-verification</comment>
+
     </changeSet>
 
 </databaseChangeLog>
